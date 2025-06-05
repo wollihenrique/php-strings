@@ -40,15 +40,21 @@ echo 'Nome: ' . $nome . PHP_EOL;
 echo 'Sobrenome: ' . $sobrenome . PHP_EOL;
 
 $csv = 'Wallace Henrique,16,wallacekada@gmail.com';
-var_dump(explode(',', $csv));
+var_dump(explode(',', $csv)). PHP_EOL;
 
 //Elimina uma parte da string
  $string = ' jane Doe';
 $initial = substr($string, 2);
-echo $initial;
+echo $initial . PHP_EOL;
 
 //Pega parte de uma string
 $string = ltrim($string, " ");
+echo $string . PHP_EOL;
 $initial = strtoupper(mb_substr($string, 0, 1));
-var_dump($initial);
+var_dump($initial) . PHP_EOL;
  
+
+//FUNÇÃO DO PHP Q INVERTE A PORRA DE UMA STRING
+$passaro = "passaro";
+$passaro_invertido = strrev($passaro);
+echo $passaro . PHP_EOL . $passaro_invertido;
